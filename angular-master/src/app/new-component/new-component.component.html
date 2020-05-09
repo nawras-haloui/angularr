@@ -1,0 +1,119 @@
+<div class="home">
+    <div id="para" class="view intro jarallax"></div>
+    <div class="home_container">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="home_content d-flex flex-row align-items-end justify-content-start">
+                        <div class="home_title">Search results</div>
+                        <div class="breadcrumbs ml-auto">
+                            <ul>
+                                <li><a routerLink="home">Home</a></li>
+                                <li>Search Results</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Home Search -->
+<div class="home_search">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="home_search_container">
+                    <div class="home_search_content">
+                        <form action="#" class="search_form d-flex flex-row align-items-start justfy-content-start">
+                            <div
+                                class="search_form_content d-flex flex-row align-items-start justfy-content-start flex-wrap">
+                                <div>
+                                    <select name="ecole" #ecole id="ecole" class="search_form_select">
+                                        <option disabled selected>institution</option>
+                                        <option>Ensit</option>
+                                        <option>Enit</option>
+                                        <option>Ensi</option>
+                                        <option>Isi</option>
+                                        <option>Fst</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <select name="type" #type  class="search_form_select">
+                                        <option disabled selected>Type</option>
+                                        <option>All</option>
+                                        <option>Foyer</option>
+                                        <option>House</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <select name="capacity" #capacity class="search_form_select">
+                                        <option disabled selected>Capacity</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>more</option>
+                                    </select>
+                                </div>
+                                
+                                
+                            </div>
+                            <button type="submit" (click)="searchAnnonce(ecole.value,type.value,capacity.value)" class="search_form_button ml-auto">search</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Properties -->
+
+<div class="properties">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="section_title"> Recent Announce</div>
+                <div class="section_subtitle">Search your dream home</div>
+            </div>
+        </div>
+        <div class="row properties_row">
+
+            <!-- Property -->
+            <div class="col-xl-4 col-lg-6 property_col" *ngFor="let annonce of annonces ">
+                <div class="property">
+                    <div class="property_image">
+                        <img src="assets/images/property_1.jpg" alt="">
+                        <div class="tag_featured property_tag"><a routerLink="/details/{{annonce.id}}">Details</a></div>
+                    </div>
+                    <div class="property_body text-center">
+                        <div class="property_location">{{annonce.nomEcole}}</div>
+                        <div class="property_title"><a href="property.html">{{annonce.type}}</a></div>
+                        <div class="property_price">{{annonce.prix}}</div>
+                    </div>
+                    <div class="property_footer d-flex flex-row align-items-center justify-content-start">
+                        <div>
+                            <div class="property_icon"><img src="assets/images/icon_1.png" alt=""></div>
+                            <span>{{annonce.genre}}</span>
+                        </div>
+                        <div>
+                            <div class="property_icon"><img src="assets/images/icon_2.png" alt=""></div><span>3
+                                Bedrooms</span>
+                        </div>
+                        <div>
+                            <div class="property_icon"><img src="assets/images/icon_3.png" alt=""></div><span>3
+                                Bathrooms</span>
+                        </div>
+                        <div>
+                            <div class="recent_icon"><img src="assets/img/wi-fi.png" alt=""></div><span> Wifi</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>

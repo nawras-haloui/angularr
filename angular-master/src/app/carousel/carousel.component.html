@@ -1,0 +1,112 @@
+<!--<div id="container">
+  <ngb-carousel [showNavigationArrows]="true" [showNavigationIndicators]="true" interval="1200" [keyboard]="true"
+    [pauseOnHover]="true" [wrap]="true" [activeId]="'firstSlide'">
+    <ng-template ngbSlide id="firstSlide">
+
+      <div class="picsum-img-wrapper" style="width:100%">
+        <img src="assets/img/foyer1.jpg" alt="Angular Carousel 1" class="mh-100" style="width: 100%; height: 515px">
+      </div>
+      <div class="carousel-caption">
+
+      </div>
+    </ng-template>
+    <ng-template ngbSlide id="secondSlide">
+      <div class="picsum-img-wrapper" style="width:100%">
+        <img src="assets/img/foyer2.jpg" alt="Angular Carousel 2" class="mh-100" style="width: 100%; height: 515px">
+      </div>
+      <div class="carousel-caption">
+
+      </div>
+    </ng-template>
+    <ng-template ngbSlide id="thirdSlide">
+      <div class="picsum-img-wrapper" style="width: 100%">
+        <img src="assets/img/foyer3.jpg" alt="Angular Carousel 3" class="mh-100" style="width: 100%; height: 515px">
+      </div>
+      <div class="carousel-caption">
+
+      </div>
+    </ng-template>
+    <ng-template ngbSlide id="fourthSlide">
+      <div class="picsum-img-wrapper" style="width: 100%">
+        <img src="assets/img/foyer4.png" alt="Angular Carousel 4" class="mh-100" style="width: 100%; height: 515px">
+      </div>
+      <div class="carousel-caption">
+
+      </div>
+    </ng-template>
+  </ngb-carousel>-->
+
+
+
+<div class="home">
+  <div id="para" class="view intro jarallax"></div>
+  <div class="home_container">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="home_content d-flex flex-row align-items-end justify-content-start">
+            <div class="home_title">Search home/foyer</div>
+            <div class="breadcrumbs ml-auto">
+              <ul>
+                <li><a routerLink="home">Home</a></li>
+                <li>Search </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Home Search -->
+<div class="home_search">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="home_search_container">
+          <div class="home_search_content">
+            <form action="#" class="search_form d-flex flex-row align-items-start justfy-content-start">
+              <div class="search_form_content d-flex flex-row align-items-start justfy-content-start flex-wrap">
+                <div>
+                  <select name="ecole" #ecole id="ecole" class="search_form_select">
+                    <option disabled selected>institution</option>
+                    <option>Ensit</option>
+                    <option>Enit</option>
+                    <option>Ensi</option>
+                    <option>Isi</option>
+                    <option>Fst</option>
+                  </select>
+                </div>
+                <div>
+                  <select name="type" #type class="search_form_select">
+                    <option disabled selected>Type</option>
+                    <option>All</option>
+                    <option>Foyer</option>
+                    <option>House</option>
+                  </select>
+                </div>
+                <div>
+                  <select name="capacity" #capacity class="search_form_select">
+                    <option disabled selected>Capacity</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>more</option>
+                  </select>
+                </div>
+
+
+              </div>
+              <button type="submit" (click)="searchAnnonce(ecole.value,type.value,capacity.value)"
+                class="search_form_button ml-auto">search</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-universities></app-universities>

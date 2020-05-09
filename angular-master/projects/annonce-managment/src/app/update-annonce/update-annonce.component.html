@@ -1,0 +1,20 @@
+<h3>Update Employee</h3>
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="name">First Name</label>
+      <input type="text" class="form-control" id="firstName" required [(ngModel)]="annonce.image_url" name="image_url">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Last Name</label>
+      <input type="text" class="form-control" id="lastName" required [(ngModel)]="annonce.description" name="description">
+    </div>
+
+    <div class="form-group">
+      <label for="name">First Name</label>
+      <input type="text" class="form-control" id="emailId" required [(ngModel)]="annonce.prix" name="prix">
+    </div>
+
+    <button type="submit" class="btn btn-success">Submit</button>
+  </form>
+

@@ -1,0 +1,12 @@
+
+#para{
+  background-image: url(src/assets/images/properties.jpg);
+  position: absolute;
+  top:0%;
+  left:-1%;
+  height: 400px; /* You must set a specified height */
+  width: 100%;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}

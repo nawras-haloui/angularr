@@ -1,0 +1,33 @@
+.container{
+    /*-webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);*/
+   
+}
+.row{
+    margin:15px;
+    opacity: 0.8;
+    position: relative;
+    top:7%;
+    left:10%;
+    
+}
+
+#response{
+    position: relative;
+    left: 10%;
+    top:30%;
+    color:purple;
+}
+
+#para{
+    background-image: url(src/assets/img/decouvrir.jpg);
+    position: absolute;
+    top:0%;
+    left:0%;
+    height: 800px; /* You must set a specified height */
+    width: 100%;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+  }
+ 

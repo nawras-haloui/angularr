@@ -1,0 +1,28 @@
+<div class="container">
+<form  #personalForm="ngForm"  novalidate>
+    
+  
+      <h4 class="head text-center">{{title}}</h4>
+      <br/>
+     
+         
+            
+             <input class="form-control input-md" #phone="ngModel"  id="phone" name="phone" type="text" placeholder="Contact phone" [(ngModel)]="personal.phone">
+            <div class="alert alert-danger" [hidden]="phone.valid">Phone is required</div>
+                  <br>
+              
+             
+                <input class="form-control input-md" #email="ngModel" pattern="^[^\s@]+@[^\s@]+\.[^\s@]{2,}$" id="email" name="email" type="text" placeholder="Email" [(ngModel)]="personal.email">
+                  <div class="alert alert-danger" [hidden]="email.valid">Email is required and must be valid</div>
+   <br>
+    
+                <button class="btn btn-outline-rounded btn-info" [disabled]="!personalForm.valid" (click)="goToNext(personalForm)"> Next <span style="margin-left:10px;" class="glyphicon glyphicon-arrow-right"></span></button>
+            
+        
+    
+</form>
+</div>        
+            
+            
+
+          

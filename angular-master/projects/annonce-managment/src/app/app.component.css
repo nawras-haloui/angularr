@@ -1,0 +1,52 @@
+.sticky{
+    position: fixed;
+    /*top: 0;*/
+    overflow: hidden;
+    z-index: 10;
+  }
+
+  .productCards{
+      background-color:#fff ;
+      position: relative;
+      top:100%;
+  }
+
+h3{border-bottom: 1px solid #c9cdd7;
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+  font-weight: normal;
+  font-size: 18px;
+  display: inline-block;
+  width: 100%;
+  font-weight: 300;
+   
+    }
+
+  .hamburger{
+    cursor:pointer;
+  }
+  
+  mat-grid-tile{
+      top:100px;
+  }
+  element.style{
+    top:200px;
+
+  }
+
+
+  mat-grid-tile-header{
+    top:150px;
+  }
+  #header1{
+    top:60px;
+  }
+  mat-nav-list{
+    
+    position: relative;
+    top: 15%;
+    
+
+  }
+  

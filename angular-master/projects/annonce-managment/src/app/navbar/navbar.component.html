@@ -1,0 +1,48 @@
+<div class="board-inner" id="status-buttons">
+    <ul class="nav nav-tabs" id="myTab">
+        <div class="liner"></div>
+                    
+        <!-- circular user icon -->
+        <li>
+            <a routerLink="/add" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" data-toggle="tab" title="personal">
+                <span class="round-tabs one">
+                    <i class="glyphicon glyphicon-user"></i>
+                </span>
+            </a>
+        </li>
+
+         <!-- circular home icon -->
+         <li>
+            <a routerLink="/poperties" routerLinkActive="active" data-toggle="tab" title="poperties">
+                <span class="round-tabs three">
+                    <i class="glyphicon glyphicon-home"></i>
+                </span>
+            </a>
+        </li>
+
+        <!-- circular tasks icon -->
+         <li>
+            <a routerLink="/description" routerLinkActive="active" data-toggle="tab" title="description">
+                <span class="round-tabs two">
+                    <i class="glyphicon glyphicon-tasks"></i>
+                </span> 
+            </a>
+        </li>
+
+       
+
+        <!-- circular ok icon -->
+        <li>
+            <a routerLink="/result" routerLinkActive="active" data-toggle="tab" title="completed">
+                <span class="round-tabs four">
+                    <i class="glyphicon glyphicon-ok"></i>
+                </span>
+            </a>
+        </li>
+                
+    </ul>
+    <div class="clearfix"></div>
+</div>
+
+<!-- Close the Splash screen -->
+<script src="assets/js/loading-bars.js"></script>

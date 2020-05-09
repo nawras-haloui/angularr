@@ -1,0 +1,26 @@
+   <div class="properties">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="section_title">Add list</div>
+				</div>
+			</div>
+			<div class="row properties_row">
+				
+				<!-- Property -->
+				<div class="col-xl-4 col-lg-6 property_col" *ngFor="let annonce of annonces ">
+					<div class="property">
+						<div class="property_image">
+							<img src="http://placehold.it/250x300" alt="">
+							<div class="tag_featured property_tag"> <a href="#" (click)="annonceDetails(annonce.id)">Details</a></div>
+						</div>
+						<div class="property_body text-center">
+							<div class="property_location">{{annonce.nom_ecole}}</div>
+							<div class="property_price">{{annonce.prix}}</div>
+						</div>
+						<div class="property_footer d-flex flex-row align-items-center justify-content-start">
+							<div><div class="property_icon"><button (click)="deleteAnnonce(annonce.id)" class="btn-success">Update</button></div></div>
+							<div><div class="property_icon"><button (click)="deleteAnnonce(annonce.id)" class="btn-danger">Delete</button></div>
+						</div>
+					</div>
+				</div>

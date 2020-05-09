@@ -1,0 +1,50 @@
+<!-- Toolbar -->
+<mat-toolbar id="tool" #toolbar [class.sticky] = "sticky" color="primary" class="header">
+  <div>Material Theme</div>
+  <span class="nav-tool-items">
+    <mat-icon (click)="sidenav.toggle()" class="hamburger">menu</mat-icon>
+  </span>
+</mat-toolbar>
+
+<mat-sidenav-container>
+  <!-- Sidenav -->
+  <mat-sidenav   #sidenav [mode]="isBiggerScreen() ? 'over' : 'side'" [(opened)]="opened" [fixedInViewport]="true"
+    [fixedTopGap]>
+    <mat-nav-list>
+      <a routerLink="home" mat-list-item>
+        <mat-icon>home</mat-icon>Home
+      </a>
+      <a routerLink="about" mat-list-item>
+        <mat-icon>search</mat-icon> Discover Us
+      </a>
+      <a routerLink="new" mat-list-item>
+        <mat-icon>content_paste</mat-icon> Recent adds
+      </a>
+      <a routerLink="login" mat-list-item>
+        <mat-icon>account_circle</mat-icon>Signin/Signup
+      </a>
+      
+         
+       
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <mat-sidenav-content >
+
+    <div class="productCards">
+      <mat-grid-list cols="4" rowHeight="400px">
+
+          <mat-grid-tile id="recent" [colspan]="4" [rowspan]="5">
+            <router-outlet></router-outlet>
+
+        </mat-grid-tile>
+
+      </mat-grid-list>
+    </div>
+
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
+
+
+

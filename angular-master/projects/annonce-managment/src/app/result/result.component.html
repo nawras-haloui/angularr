@@ -1,0 +1,24 @@
+<div class="container">
+
+    <h3 class="head text-center">{{title}}</h3>
+   
+   <br>
+                    <!--<label  for="name">Contact info: </label> 
+                    {{Annonceur.email + ' ' + Annonceur.phone}}
+                    -->
+                <br>
+                   <label  for="address">Local info: </label>
+                    <br/>
+                    {{formData.type + ' ' + formData.nom_ecole }}
+                    <br/>
+
+
+
+                    <label  for="work">Description: </label> 
+                    {{formData.description}}
+    
+    <div class="text-center">
+        <button type="button" class="btn btn-success btn-outline-rounded" [disabled]="!isFormValid" (click)="submit()"> Submit <span style="margin-left:10px;" class="glyphicon glyphicon-arrow-right"></span></button>
+    </div>
+
+</div>

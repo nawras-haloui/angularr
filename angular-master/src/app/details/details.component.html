@@ -1,0 +1,232 @@
+
+<div class="home">
+    <div id="para" class="view intro jarallax"></div>
+    <div class="home_container">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="home_content d-flex flex-row align-items-end justify-content-start">
+                        <div class="home_title">Search results</div>
+                        <div class="breadcrumbs ml-auto">
+                            <ul>
+                                <li><a routerLink="home">Home</a></li>
+                                <li>Search Results</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Home Search -->
+<div class="home_search">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="home_search_container">
+                    <div class="home_search_content">
+                        <form action="#" class="search_form d-flex flex-row align-items-start justfy-content-start">
+                            <div
+                                class="search_form_content d-flex flex-row align-items-start justfy-content-start flex-wrap">
+                                <div>
+                                    <select name="ecole" #ecole id="ecole" class="search_form_select">
+                                        <option disabled selected>institution</option>
+                                        <option>Ensit</option>
+                                        <option>Enit</option>
+                                        <option>Ensi</option>
+                                        <option>Isi</option>
+                                        <option>Fst</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <select name="type" #type  class="search_form_select">
+                                        <option disabled selected>Type</option>
+                                        <option>All</option>
+                                        <option>Foyer</option>
+                                        <option>House</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <select name="capacity" #capacity class="search_form_select">
+                                        <option disabled selected>Capacity</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>more</option>
+                                    </select>
+                                </div>
+                                
+                                
+                            </div>
+                            <button type="submit" (click)="searchAnnonce(ecole.value,type.value,capacity.value)" class="search_form_button ml-auto">search</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Intro -->
+
+<div class="intro">
+    <div class="cont">
+        <div class="row">
+            <div class="col">
+                <div class="intro_content d-flex flex-lg-row flex-column align-items-start justify-content-start">
+                    <div class="intro_title_container">
+                        <div class="intro_title">Town house with sea view</div>
+                    </div>
+                    <div class="intro_price_container ml-lg-auto d-flex flex-column align-items-start justify-content-center" >
+                        <div class="intro_price">$980,000</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="intro_slider_container">
+
+        <!-- Intro Slider -->
+        <div class="owl-carousel owl-theme intro_slider">
+            <!-- Slide -->
+            <div class="owl-item"><img id="owl" src="assets/images/intro_1.jpg" alt=""></div>
+            <!-- Slide -->
+            <div class="owl-item"><img id="owl" src="assets/images/intro_1.jpg" alt=""></div>
+            <!-- Slide -->
+            <div class="owl-item"><img id="owl" src="assets/images/intro_1.jpg" alt=""></div>
+        </div>
+
+        <!-- Intro Slider Nav -->
+        <div class="intro_slider_nav_container">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="intro_slider_nav_content d-flex flex-row align-items-start justify-content-end">
+                            <div class="intro_slider_nav intro_slider_prev"><i class="fa fa-chevron-left" aria-hidden="true"></i></div>
+                            <div class="intro_slider_nav intro_slider_next"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Property -->
+
+<div class="property">
+    <div class="container">
+        <div class="row">
+            
+            <!-- Sidebar -->
+
+            <div class="col-lg-4">
+                <div class="sidebar">
+                    <div class="sidebar_search">
+                        <div class="sidebar_search_title">Contact announcer</div>
+                        <div class="sidebar_search_form_container">
+                            <form action="#" class="sidebar_search_form" id="sidebar_search_form">
+                                <select class="sidebar_search_select">
+                                    
+                                </select>
+                                <select class="sidebar_search_select">
+                                    
+                                </select>
+                                <select class="sidebar_search_select">
+                                    
+                                </select>
+                             <button class="sidebar_search_button search_form_button">Contact</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- Realtor -->
+                    <div class="sidebar_realtor">
+                        <div class="sidebar_realtor_body text-center">
+                            <div class="sidebar_realtor_phone"><span>Or call us: </span>652 345 3222 11</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Property Content -->
+            <div class="col-lg-7 offset-lg-1">
+                <div class="property_content">
+                    <div class="property_icons">
+                        <div class="property_title">Extra Facilities</div>
+                         <div class="property_rooms d-flex flex-sm-row flex-column align-items-start justify-content-start">
+
+                            <!-- Property Room Item -->
+                            <div class="property_room">
+                                <div class="property_room_title">Bedrooms</div>
+                                <div class="property_room_content d-flex flex-row align-items-center justify-content-start">
+                                    <div class="room_icon"><img src="assets/images/room_1.png" alt=""></div>
+                                    <div class="room_num">4</div>
+                                </div>
+                            </div>
+
+                            <!-- Property Room Item -->
+                            <div class="property_room">
+                                <div class="property_room_title">Bathrooms</div>
+                                <div class="property_room_content d-flex flex-row align-items-center justify-content-start">
+                                    <div class="room_icon"><img src="assets/images/room_2.png" alt=""></div>
+                                    <div class="room_num">3</div>
+                                </div>
+                            </div>
+
+                            <!-- Property Room Item -->
+                            <div class="property_room">
+                                <div class="property_room_title">Wifi</div>
+                                <div class="property_room_content d-flex flex-row align-items-center justify-content-start">
+                                    <div class="room_icon"><img src="assets/images/room_3.png" alt=""></div>
+                                    <div class="room_num">7100 Sq Ft</div>
+                                </div>
+                            </div>
+
+                            <!-- Property Room Item -->
+                            <div class="property_room">
+                                <div class="property_room_title">Patio</div>
+                                <div class="property_room_content d-flex flex-row align-items-center justify-content-start">
+                                    <div class="room_icon"><img src="assets/images/room_4.png" alt=""></div>
+                                    <div class="room_num">1</div>
+                                </div>
+                            </div>
+
+                            
+
+                        </div>
+                    </div>
+
+                    <!-- Description -->
+
+                    <div class="property_description">
+                        <div class="property_title">Description</div>
+                        <div class="property_text property_text_2">
+                            <p>{{annonce.description}}</p>
+                        </div>
+                    </div>
+
+                  
+                    <!-- Property On Map -->
+
+                    <div class="property_map">
+                        <div class="property_title">Property on map</div>
+                        <div class="property_map_container">
+
+                            <!-- Google Map -->
+                            <div id="google_map" class="google_map">
+                                <div class="map_container">
+                                    <div id="map"></div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
